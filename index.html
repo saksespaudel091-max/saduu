@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Sadu ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff5ed;
+    font-family: 'Poppins', sans-serif;
+    color: #704b46;
+    overflow-x: hidden;
+}
+
+/* Background */
+
+.background {
+    position: fixed;
+    inset: 0;
+    background:
+    radial-gradient(circle at 10% 20%, #ffe0d2, transparent 35%),
+    radial-gradient(circle at 90% 80%, #ffd9e5, transparent 35%),
+    #fff8f1;
+    z-index: -2;
+}
+
+/* Floating hearts */
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 22px;
+    animation: floatUp 8s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Hero section */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.small-title {
+    color: #d58b74;
+    letter-spacing: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(55px, 10vw, 90px);
+    color: #c96f69;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #9c7770;
+    margin-bottom: 30px;
+}
+
+/* Photo */
+
+.photo-frame {
+    width: 280px;
+    height: 330px;
+    padding: 10px;
+    background: white;
+    border-radius: 150px 150px 25px 25px;
+    box-shadow: 0 15px 40px rgba(196, 116, 105, 0.2);
+    transform: rotate(-2deg);
+    transition: 0.4s;
+}
+
+.photo-frame:hover {
+    transform: rotate(0deg) scale(1.04);
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 145px 145px 20px 20px;
+}
+
+.caption {
+    margin-top: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #bd7770;
+}
+
+/* Message section */
+
+.message-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.message-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 45px 30px;
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #ffe2d8;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(180, 115, 105, 0.1);
+}
+
+.message-card h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    color: #c96f69;
+    margin-bottom: 25px;
+}
+
+.message-card p {
+    line-height: 2;
+    font-size: 14px;
+    color: #85655e;
+    margin-bottom: 15px;
+}
+
+/* Secret button */
+
+.secret-btn {
+    border: none;
+    padding: 15px 32px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #e99a91, #d77983);
+    color: white;
+    font-size: 14px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+    box-shadow: 0 7px 20px #e7b5ad;
+}
+
+.secret-btn:hover {
+    transform: translateY(-4px);
+}
+
+.secret {
+    display: none;
+    margin-top: 30px;
+    padding: 25px;
+    background: #fff0ed;
+    border-radius: 20px;
+    animation: appear 1s ease;
+}
+
+.secret h3 {
+    font-family: 'Dancing Script';
+    font-size: 35px;
+    color: #c96f69;
+    margin-bottom: 15px;
+}
+
+.secret p {
+    line-height: 2;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Final section */
+
+.final {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.final h2 {
+    font-family: 'Dancing Script';
+    font-size: 50px;
+    color: #c96f69;
+}
+
+.final p {
+    margin-top: 15px;
+    color: #a27b72;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #bd9188;
+    font-size: 12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="small-title">
+        A little world made for you
+    </div>
+
+    <h1>Hey, Sadu! 🌷</h1>
+
+    <p class="subtitle">
+        Someone as special as you deserves something special.
+    </p>
+
+    <div class="photo-frame">
+
+        <img src="sadu.jpeg" alt="A beautiful memory of Sadikshya">
+
+    </div>
+
+    <div class="caption">
+        My little sunshine ☀️
+    </div>
+
+    <p style="margin-top:20px; font-size:13px;">
+        Scroll down, I have something for you 💌
+    </p>
+
+</section>
+
+
+<!-- MESSAGE -->
+
+<section class="message-section">
+
+    <div class="message-card">
+
+        <h2>Dear Sadikshya ❤️</h2>
+
+        <p>
+            I don't know if words can explain how special
+            you are, but I just wanted to make this little
+            website to remind you.
+        </p>
+
+        <p>
+            You are like sunshine on a cloudy day,
+            like a sunflower in a beautiful garden.
+        </p>
+
+        <p>
+            Your smile makes ordinary moments beautiful,
+            and your presence makes little things memorable.
+        </p>
+
+        <p>
+            Never stop smiling, never stop being yourself,
+            because you are amazing just the way you are.
+        </p>
+
+        <p>
+            And yes, this little website is made
+            especially for you, my Sadu. 🥹
+        </p>
+
+        <button class="secret-btn" onclick="openSecret()">
+            Open a little surprise 💌
+        </button>
+
+        <div class="secret" id="secret">
+
+            <h3>One little thing...</h3>
+
+            <p>
+                If I could give you one thing in this world,
+                it would be the ability to see yourself
+                through my eyes.
+            </p>
+
+            <p>
+                Then you would understand how wonderful
+                and special you are. ❤️
+            </p>
+
+            <h3>I appreciate you, Sadu! 🌻</h3>
+
+            <div style="font-size:35px;">
+                💗 🧸 🌷 💗
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ENDING -->
+
+<section class="final">
+
+    <h2>Stay happy, Sadu! 🌻</h2>
+
+    <p>
+        Sending you a thousand little sunflowers
+        and endless smiles. 💛
+    </p>
+
+    <p style="margin-top:25px; font-size:30px;">
+        ❤️ 🌷 🦋 🌻
+    </p>
+
+</section>
+
+
+<footer>
+
+    Made with love, just for Sadikshya ❤️
+
+</footer>
+
+
+<script>
+
+// Floating hearts
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    const emojis = ["❤️", "💗", "🌸", "💕", "🌻", "✨"];
+
+    heart.innerHTML =
+    emojis[Math.floor(Math.random() * emojis.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.animationDuration =
+    (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 10000);
+
+}
+
+setInterval(createHeart, 600);
+
+
+// Secret message
+
+function openSecret() {
+
+    const secret = document.getElementById("secret");
+
+    if (secret.style.display === "block") {
+
+        secret.style.display = "none";
+
+    } else {
+
+        secret.style.display = "block";
+
+        secret.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
